@@ -321,7 +321,7 @@ form.addEventListener('submit',async e=>{
  btn.disabled=true;label.textContent='Sending...';status.className='status';status.style.display='none';
  const data=Object.fromEntries(new FormData(form));
  try{
-  const api=location.hostname==='karimcoders.github.io'?'https://wiley-olympus-mistakes-migration.trycloudflare.com/api/enquiry':'/api/enquiry';
+  const api=location.hostname==='karimcoders.github.io'?'https://spread-region-considerations-locator.trycloudflare.com/api/enquiry':'/api/enquiry';
   const res=await fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(15000)});
   const result=await res.json();
   if(!res.ok||!result.ok)throw new Error(result.error||'Failed');
